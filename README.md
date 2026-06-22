@@ -1,52 +1,55 @@
-# Credoz — Personal Portfolio Profile
+# Credoz — Personal Profile
 
 ## Description
 
-A sleek, minimalist personal portfolio website built with **HTML**, **CSS**, and **JavaScript**. This project showcases the professional identity, skills, and milestones of **Casey Freud J. Madriaga** (Credoz). The design follows a **green and black motif** with a geometric, tech-forward aesthetic inspired by network node visualizations and hexagonal grid layouts.
+A cyberpunk-inspired personal profile built as a **bento grid dashboard** using pure **HTML**, **CSS**, and **JavaScript**. The design features a sleek **green and black motif** with a terminal-hacker aesthetic — completely distinct from traditional portfolio layouts.
 
-The site features a fixed sidebar navigation, full-screen panels with scroll-triggered animations, a cursor-tracking glow effect, an SVG network illustration with drawing animations, and a responsive mobile experience with an overlay menu.
+Key visual elements include an interactive particle network background with connection lines, a mouse-tracking glow effect on each card, a terminal window with a typing animation for the bio, animated skill progress bars, a rotating SVG avatar graphic, and a live clock in the status bar. The entire layout uses CSS Grid to create an asymmetric, dashboard-style composition.
 
 ## Purpose
 
-This portfolio was created to:
+This project serves as:
 
-- **Establish a professional online presence** that communicates Credoz's identity, values, and aspirations.
-- **Highlight soft skills and competencies** through a distinctive hexagonal grid layout.
-- **Document key milestones** including a Java 2D RPG game project and a SCRUM certification.
-- **Demonstrate front-end development capability** through the website's own design, interactivity, and polish.
-- **Serve as a visual resume** for potential OJT employers, collaborators, and professional opportunities.
+- **A personal profile card** showcasing Casey Freud J. Madriaga's identity, skills, and accomplishments.
+- **A demonstration of creative front-end development** using only vanilla HTML, CSS, and JavaScript — no frameworks or libraries.
+- **A visual differentiator** from conventional portfolio sites, utilizing a cyberpunk/terminal aesthetic to reflect a tech-forward personality.
+- **An OJT-ready portfolio piece** that highlights both soft skills (leadership, communication, teamwork) and technical achievements (game development, Scrum certification).
 
 ## Features
 
-- Fixed sidebar navigation with active section tracking
-- Full-screen panel layout with corner geometric decorations
-- Cursor-following radial glow effect
-- SVG network illustration with animated draw-line and pulse effects
-- Scroll-triggered animations (fade-in, slide-in, split-fade) via Intersection Observer
-- Hexagonal skill grid with hover interactions
-- Vertical timeline with animated milestone cards
-- Fully responsive with mobile hamburger menu and full-screen overlay navigation
-- Parallax mouse movement on hero graphic
+- **Bento Grid Layout** — Asymmetric dashboard-style card composition using CSS Grid
+- **Particle Network Background** — Animated canvas with floating particles and proximity-based connection lines
+- **Mouse-Tracking Card Glow** — Radial gradient follows cursor position on hover
+- **Terminal Typing Effect** — Bio text types out character by character with a blinking cursor
+- **Animated Skill Bars** — Progress bars with eased CSS transitions triggered on scroll
+- **Staggered Reveal Animations** — Cards fade in sequentially using Intersection Observer
+- **Rotating SVG Avatar** — Custom animated graphic with dashed orbit ring and spinning hexagon
+- **Live Clock** — Real-time clock display in the top status bar
+- **Scanline Overlay** — Subtle CRT-style scanline effect for atmosphere
+- **Fully Responsive** — Adapts from 4-column desktop to single-column mobile
 
 ## Technologies Used
 
-- **HTML5** — Semantic markup, inline SVG graphics
-- **CSS3** — Custom properties, CSS Grid, Flexbox, keyframe animations, media queries
-- **JavaScript (ES6+)** — DOM manipulation, Intersection Observer, mouse event handling, scroll tracking
+- **HTML5** — Semantic structure and inline SVG graphics
+- **CSS3** — Custom properties, CSS Grid, Flexbox, animations, media queries, backdrop-filter
+- **JavaScript (ES6+)** — Canvas API, Intersection Observer, requestAnimationFrame, DOM manipulation
 
 ## Sections
 
-1. **Home** — Name, alias (Credoz), tagline, and an animated SVG network illustration
-2. **About** — Personal philosophy, career mindset, and motivational motto
-3. **Skills** — Six core competencies displayed in a hexagonal grid (Public Relations, Teamwork, Time Management, Leadership, Effective Communication, Critical Thinking)
-4. **Journey** — Timeline of milestones:
-   - Castlefall — 2D RPG Game in Java (2024–2025)
-   - SCRUM Foundation Professional Certification — SFPC (February 9, 2026)
+| Card | Content |
+|------|---------|
+| Identity | Name, alias (Credoz), animated SVG avatar, hexagon decoration |
+| Terminal | About/bio displayed in a terminal window with typing animation |
+| Status | Quick info grid (status, role, focus, certification) |
+| Skills | Animated progress bars for 6 soft skills |
+| Project 1 | Castlefall — 2D RPG Game in Java (2024–2025) |
+| Project 2 | SFPC Scrum Foundation Professional Certification (Feb 2026) |
+| Footer | Branding bar |
 
 ## Author
 
 **Casey Freud J. Madriaga** (Credoz)
-Aspiring Developer & Continuous Learner
+Computer Science Student | Aspiring Professional
 
 ## License
 
