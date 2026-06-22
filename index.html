@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credoz | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-brand">
+                <svg class="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" stroke="var(--green)" stroke-width="2" fill="none"/>
+                    <polygon points="20,10 30,16 30,26 20,32 10,26 10,16" stroke="var(--green)" stroke-width="1.5" fill="var(--green-dim)"/>
+                    <circle cx="20" cy="21" r="3" fill="var(--green)"/>
+                </svg>
+                <span class="brand-text">Credoz</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#home" class="sidebar-link active" data-section="home">
+                    <span class="link-num">01</span>
+                    <span class="link-label">Home</span>
+                </a>
+                <a href="#about" class="sidebar-link" data-section="about">
+                    <span class="link-num">02</span>
+                    <span class="link-label">About</span>
+                </a>
+                <a href="#skills" class="sidebar-link" data-section="skills">
+                    <span class="link-num">03</span>
+                    <span class="link-label">Skills</span>
+                </a>
+                <a href="#journey" class="sidebar-link" data-section="journey">
+                    <span class="link-num">04</span>
+                    <span class="link-label">Journey</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="footer-year">2025</span>
+                <div class="footer-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header" id="mobileHeader">
+        <div class="mobile-brand">Credoz</div>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <span></span><span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Overlay Nav -->
+    <div class="mobile-nav-overlay" id="mobileOverlay">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#journey" class="mobile-link">Journey</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Section 1: Home / Hero -->
+        <section class="panel" id="home">
+            <div class="panel-decor panel-decor--tl"></div>
+            <div class="panel-decor panel-decor--br"></div>
+            <div class="hero-block">
+                <div class="hero-tag fade-in">
+                    <span class="tag-line"></span>
+                    <span class="tag-text">Welcome to my space</span>
+                </div>
+                <h1 class="hero-title split-fade">
+                    <span class="line">Casey Freud J.</span>
+                    <span class="line line--accent">Madriaga</span>
+                </h1>
+                <p class="hero-subtitle fade-in">aka <strong>Credoz</strong> &mdash; Driven learner, aspiring developer, and future-ready professional.</p>
+                <div class="hero-graphic fade-in">
+                    <svg viewBox="0 0 320 180" class="hero-illustration">
+                        <!-- Hexagonal network graphic -->
+                        <defs>
+                            <linearGradient id="gGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--green);stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:var(--green-dark);stop-opacity:0.4"/>
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="blur"/>
+                                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Connection lines -->
+                        <line x1="160" y1="30" x2="80" y2="70" stroke="var(--green-dim)" stroke-width="1" class="draw-line"/>
+                        <line x1="160" y1="30" x2="240" y2="70" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.2s"/>
+                        <line x1="80" y1="70" x2="50" y2="140" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.4s"/>
+                        <line x1="80" y1="70" x2="140" y2="120" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.3s"/>
+                        <line x1="240" y1="70" x2="200" y2="140" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.5s"/>
+                        <line x1="240" y1="70" x2="290" y2="130" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.6s"/>
+                        <line x1="140" y1="120" x2="200" y2="140" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.7s"/>
+                        <line x1="50" y1="140" x2="140" y2="120" stroke="var(--green-dim)" stroke-width="1" class="draw-line" style="animation-delay:0.8s"/>
+                        <!-- Nodes -->
+                        <circle cx="160" cy="30" r="6" fill="url(#gGrad)" filter="url(#glow)" class="pulse-node"/>
+                        <circle cx="80" cy="70" r="5" fill="var(--green)" opacity="0.7" class="pulse-node" style="animation-delay:0.3s"/>
+                        <circle cx="240" cy="70" r="5" fill="var(--green)" opacity="0.7" class="pulse-node" style="animation-delay:0.5s"/>
+                        <circle cx="50" cy="140" r="4" fill="var(--green-dark)" opacity="0.5" class="pulse-node" style="animation-delay:0.7s"/>
+                        <circle cx="140" cy="120" r="4" fill="var(--green-dark)" opacity="0.5" class="pulse-node" style="animation-delay:0.8s"/>
+                        <circle cx="200" cy="140" r="4" fill="var(--green-dark)" opacity="0.5" class="pulse-node" style="animation-delay:0.9s"/>
+                        <circle cx="290" cy="130" r="4" fill="var(--green-dark)" opacity="0.5" class="pulse-node" style="animation-delay:1.0s"/>
+                        <!-- Center hex -->
+                        <polygon points="160,75 175,84 175,102 160,111 145,102 145,84" stroke="var(--green)" stroke-width="1.5" fill="var(--green-dim)" class="rotate-slow" style="transform-origin:160px 93px"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About -->
+        <section class="panel" id="about">
+            <div class="panel-decor panel-decor--br"></div>
+            <div class="about-block">
+                <div class="section-marker">
+                    <span class="marker-line"></span>
+                    <span class="marker-text">02 &mdash; About</span>
+                </div>
+                <h2 class="panel-heading slide-in-left">Who I Am</h2>
+                <div class="about-body">
+                    <p class="about-text slide-in-left" style="animation-delay:0.15s">
+                        I am <strong>Casey Freud J. Madriaga</strong>, known online as <strong>Credoz</strong>. I am someone who craves continuous growth &mdash; always seeking to upgrade my knowledge, sharpen my skills, and turn every experience into a stepping stone for the future.
+                    </p>
+                    <p class="about-text slide-in-left" style="animation-delay:0.3s">
+                        My goal is to use what I know to fit into any team, contribute meaningfully, and learn even more throughout the process. I believe in being an asset, not a liability &mdash; and in making every effort count toward both personal development and the broader goals of the people and organizations I work with.
+                    </p>
+                    <p class="about-text slide-in-left" style="animation-delay:0.45s">
+                        Every project, every challenge, and every collaboration is an opportunity to level up. I'm ready for the next one.
+                    </p>
+                </div>
+                <div class="about-motto slide-in-left" style="animation-delay:0.6s">
+                    <blockquote>
+                        "Crave to learn. Upgrade your skills. Be an asset."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Skills -->
+        <section class="panel" id="skills">
+            <div class="panel-decor panel-decor--tl"></div>
+            <div class="skills-block">
+                <div class="section-marker">
+                    <span class="marker-line"></span>
+                    <span class="marker-text">03 &mdash; Skills</span>
+                </div>
+                <h2 class="panel-heading slide-in-left">Core Competencies</h2>
+                <div class="skills-hex-grid">
+                    <div class="hex-item fade-in-up" style="animation-delay:0.1s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="hex-label">Public Relations</span>
+                        </div>
+                    </div>
+                    <div class="hex-item fade-in-up" style="animation-delay:0.2s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="hex-label">Teamwork</span>
+                        </div>
+                    </div>
+                    <div class="hex-item fade-in-up" style="animation-delay:0.3s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            <span class="hex-label">Time Management</span>
+                        </div>
+                    </div>
+                    <div class="hex-item fade-in-up" style="animation-delay:0.4s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM19 8l-4 4M15 8l4 4" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 2l-4 4" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" opacity="0"/><polygon points="12,2 15,2 15,8 12,8" fill="currentColor" opacity="0"/></svg>
+                            <span class="hex-label">Leadership</span>
+                        </div>
+                    </div>
+                    <div class="hex-item fade-in-up" style="animation-delay:0.5s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="hex-label">Effective Communication</span>
+                        </div>
+                    </div>
+                    <div class="hex-item fade-in-up" style="animation-delay:0.6s">
+                        <svg viewBox="0 0 100 100" class="hex-bg">
+                            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+                        </svg>
+                        <div class="hex-content">
+                            <svg viewBox="0 0 24 24" class="hex-icon"><path d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="hex-label">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Journey -->
+        <section class="panel" id="journey">
+            <div class="panel-decor panel-decor--br"></div>
+            <div class="journey-block">
+                <div class="section-marker">
+                    <span class="marker-line"></span>
+                    <span class="marker-text">04 &mdash; Journey</span>
+                </div>
+                <h2 class="panel-heading slide-in-left">Milestones</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in-up" style="animation-delay:0.15s">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-connector"></div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-eyebrow">
+                                <span class="card-year">2024 &ndash; 2025</span>
+                                <span class="card-type">Project</span>
+                            </div>
+                            <h3 class="card-title">Castlefall</h3>
+                            <p class="card-subtitle">2D RPG Game &mdash; Java</p>
+                            <p class="card-body">
+                                Developed an immersive 2D Role-Playing Game titled <strong>Castlefall</strong> using Java. 
+                                This project involved designing game mechanics, building interactive worlds, 
+                                and crafting a compelling gameplay experience from the ground up. It served as a 
+                                hands-on exploration of object-oriented programming, game logic architecture, 
+                                and creative problem-solving within a complex software project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in-up" style="animation-delay:0.35s">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-eyebrow">
+                                <span class="card-year">February 9, 2026</span>
+                                <span class="card-type">Certification</span>
+                            </div>
+                            <h3 class="card-title">SCRUM Foundation Professional Certification</h3>
+                            <p class="card-subtitle">SFPC &mdash; Open Test</p>
+                            <p class="card-body">
+                                Earned the <strong>SCRUM Foundation Professional Certification (SFPC)</strong> through 
+                                an open examination, demonstrating a solid understanding of Agile methodologies and 
+                                the Scrum framework. This certification reflects a commitment to modern project 
+                                management practices, iterative development, and collaborative team workflows &mdash; 
+                                essential competencies for thriving in today's fast-paced tech environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
